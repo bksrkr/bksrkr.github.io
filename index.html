@@ -82,6 +82,31 @@
             margin:0;
         }
         
+        #icons {
+            position: absolute;
+            bottom: 22%;
+            right: 8%;
+            width: 400px;
+            height: 80px;
+            z-index: 8;
+            transform: rotate(-57deg); 
+            -ms-transform: rotate(-57deg); 
+            -webkit-transform: rotate(-57deg); 
+            -moz-transform: rotate(-57deg);
+        }
+        
+        #contact { 
+            float: left; 
+            cursor: pointer; 
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9; /* ie8 */
+        }
+
+        
      
         <!--
         .wrap{
@@ -152,9 +177,13 @@
     <div id="Home" class="tabcontent">
         <div>
             <table>
-                <td width="250">
-                    <img src="images/bsarkar_portrait.jpg" alt="Bidyut Kumar Sarkar" height="250"/>
-                </td>
+                <div id="icons">
+                    <div id="contact">
+                        <img src="images/bsarkar_portrait.jpg" alt="Bidyut Kumar Sarkar"/>
+                    </div>
+                    <img src="img/icon_links.png" alt="" />
+                </div>
+
                 <td>
                     <h1>Bidyut Kumar Sarkar</h1>
                     <br>
@@ -274,9 +303,12 @@
       <!-- <h3>Research Synopsis</h3> -->
        <div>
            <table>
-               <td width="250">
-                   <img src="images/bsarkar_portrait.jpg" alt="Bidyut Kumar Sarkar" height="250"/>
-               </td>
+               <div id="icons">
+                   <div id="contact">
+                       <img src="images/bsarkar_portrait.jpg" alt="Bidyut Kumar Sarkar"/>
+                   </div>
+                   <img src="img/icon_links.png" alt="" />
+               </div>
                <td>
                    <h1>Bidyut Kumar Sarkar</h1>
                    <br>
@@ -319,7 +351,7 @@
             $x = -b \pm \sqrt{2a}$
             -->
            
-           <!-- if you need to write any latex in html, enclose it in $ and $ or use the one below for separate lines
+           <!-- if you need to write any latex in html, enclose it in $ and $ or use the one below for separate lines, use pandoc.try to generate math equations
            <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">y = \frac{a}{b} + c^2 + d</annotation></semantics></math></p>
            -->
            
@@ -389,7 +421,7 @@
            $\left(\sigma_3 \sigma_1 \pm \sigma_1 \sigma_3 \text{ or } 0^Q \pm -^C \right)$, Electro
            $\left(\sigma_3 \sigma_2 + \sigma_2 \sigma_3 \text{ or } -^Q + +^C \right)$-Magnetic $\left(\sigma_2 \sigma_3 - \sigma_3 \sigma_2 \text{ or } +^C - -^Q \right)$
             fields but also Space $\left(\sigma_1 \sigma_2 \sigma_2 \sigma_3 \sigma_3 \sigma_1 \text{ or } +^C \right)$-
-           Time $\left(\sigma1 \sigma2 \sigma3 \tex{ or } -^Q \right)$ fabric is expressed by these discrete basis vectors.
+           Time $\left(\sigma1 \sigma2 \sigma3 \text{ or } -^Q \right)$ fabric is expressed by these discrete basis vectors.
            <br>
            <br>
            <td width="300">
